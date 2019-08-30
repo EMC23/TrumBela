@@ -1,5 +1,9 @@
 # TrumBela
 PureData Fx pedal for Bela
+
+![Layout](http://wiki.emc23.com/images/thumb/7/77/TrumBela.gif/450px-TrumBela.gif "layout")
+
+
 Tr-umBela an FX box for the Roland TR 8 based on ther Fx above. The assignable A and B outputs are used as sends and the mix in is used as returns. Specifically built for the toms, rimshot and Clap but any of the voices can be assigned to Mix out, A or B as usual.
 TrumBela.gif
 
