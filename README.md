@@ -3,8 +3,7 @@ PureData Fx pedal for Bela
 Tr-umBela an FX box for the Roland TR 8 based on ther Fx above. The assignable A and B outputs are used as sends and the mix in is used as returns. Specifically built for the toms, rimshot and Clap but any of the voices can be assigned to Mix out, A or B as usual.
 TrumBela.gif
 
-Tr-8-back.jpeg
-
+![TrumBela](http://wiki.emc23.com/images/5/55/Tr-8-back.jpeg "TrumBela")
 
     https://guitarextended.wordpress.com/2011/12/12/creating-a-simple-effect-with-pd/ Creating a simple delay effect
     https://guitarextended.wordpress.com/2011/12/28/simple-fuzz-effect-with-pure-data/ Simple Fuzz effect
