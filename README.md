@@ -1,6 +1,8 @@
 # TrumBela
 PureData Fx pedal for Bela
 
+The Trum bela is ourfirst hardware/.software project using the Bela and Pure Data. It is a single use device with no display other than 8 led.
+
 ![Layout](http://wiki.emc23.com/images/thumb/7/77/TrumBela.gif/450px-TrumBela.gif "layout")
 
 
