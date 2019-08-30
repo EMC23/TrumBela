@@ -1,0 +1,52 @@
+#N canvas 939 416 653 502 10;
+#X obj 178 349 freeverb~;
+#X msg 262 54 roomsize \$1;
+#X msg 261 115 damping \$1;
+#X msg 257 185 wet \$1;
+#X msg 256 206 dry \$1;
+#X msg 275 275 freeze \$1;
+#X msg 275 315 bypass \$1;
+#X obj 275 258 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 275 298 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 389 148 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -4032
+-1 -1 0 1;
+#X floatatom 386 167 5 0 0 0 - - -, f 5;
+#X obj 317 189 expr 1-$f1;
+#X obj 387 33 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -4034
+-1 -1 0 1;
+#X obj 389 90 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -260097
+-1 -1 0 1;
+#X floatatom 386 110 5 0 0 0 - - -, f 5;
+#X floatatom 384 58 5 0 0 0 - - -, f 5;
+#X text 366 264 Freeze the reverb;
+#X text 366 324 the dry signal pass through.;
+#X text 365 311 Trun the reverb off and let;
+#X text 436 175 Wet signal to dry signal ratio;
+#X text 436 191 (0 : all dry \, 1 : all wet);
+#X text 437 110 Damping level;
+#X text 436 56 Roomize;
+#X text 271 460 Pierre Massat \, GuitarExtended \, 2012;
+#X obj 177 20 inlet~;
+#X obj 178 465 outlet~;
+#X obj 229 465 outlet~;
+#X connect 0 0 25 0;
+#X connect 0 0 26 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 6 0 0 0;
+#X connect 7 0 5 0;
+#X connect 8 0 6 0;
+#X connect 9 0 10 0;
+#X connect 9 0 3 0;
+#X connect 9 0 11 0;
+#X connect 11 0 4 0;
+#X connect 12 0 1 0;
+#X connect 12 0 15 0;
+#X connect 13 0 2 0;
+#X connect 13 0 14 0;
+#X connect 24 0 0 0;

@@ -1,0 +1,52 @@
+#N canvas 167 63 532 500 10;
+#X obj 21 379 vcf~;
+#X floatatom 112 343 5 0 0 0 - - -, f 5;
+#X obj 112 210 vsl 15 128 0 20 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 3366 1;
+#X obj 87 21 +~ 1;
+#X obj 88 42 *~ 0.5;
+#X obj 87 0 osc~ 2;
+#X obj 189 77 hsl 128 15 700 6000 0 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 0 1;
+#X obj 143 150 hsl 128 15 0 700 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 140 169 6 0 0 0 - - -, f 6;
+#X floatatom 141 111 6 0 0 0 - - -, f 6;
+#X obj 141 92 -;
+#X obj 141 70 bang;
+#X obj 41 176 +~ 200;
+#X obj 40 94 *~ 1500;
+#X text 138 17 <-- LFO (Low-Frequency Oscillator;
+#X text 322 75 <-- Maximum of the freq. range;
+#X text 276 147 <-- Minimum of the freq. range;
+#X text 149 300 <-- "Q";
+#X text 60 380 <-- Voltage-Controlled band-pass filter;
+#X obj 92 -29 hsl 128 15 0.5 4 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 273 427 Pierre Massat \, GuitarExtended \, 2012.s;
+#X obj 184 201 loadbang;
+#X msg 182 226 5.3;
+#X obj 20 -18 inlet~;
+#X obj 15 414 outlet~;
+#X obj 75 414 outlet~;
+#X connect 0 0 24 0;
+#X connect 0 0 25 0;
+#X connect 2 0 1 0;
+#X connect 2 0 0 2;
+#X connect 3 0 4 0;
+#X connect 4 0 13 0;
+#X connect 5 0 3 0;
+#X connect 6 0 10 0;
+#X connect 7 0 8 0;
+#X connect 7 0 10 1;
+#X connect 7 0 11 0;
+#X connect 7 0 12 1;
+#X connect 10 0 9 0;
+#X connect 10 0 13 1;
+#X connect 11 0 10 0;
+#X connect 12 0 0 1;
+#X connect 13 0 12 0;
+#X connect 19 0 5 0;
+#X connect 21 0 22 0;
+#X connect 22 0 2 0;
+#X connect 23 0 0 0;
