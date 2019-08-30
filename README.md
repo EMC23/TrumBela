@@ -28,3 +28,14 @@ TrumBela.gif
     https://guitarextended.wordpress.com/2012/07/08/detuning-delay/ Detuning delay
     https://guitarextended.wordpress.com/2012/07/10/thehexxciter-detuning-reverb-better/ TheHexxciter
     https://guitarextended.wordpress.com/2013/08/05/making-a-looper-with-pure-data/ Looper
+    
+    
+I hve removed the dac~ and adc~ from each of the tutorial fx units and replaced them with inlets and outlets. This allows me to use them as modules in the master pedal board.
+
+I can now add  8 faders and 8 switches. In order to have some control we are limited to 3 fx by two inputs equals siz volume knobs, six on/of buttons and 6 leds.
+
+That leaves us with two knows and two buttons that can act as toggles to access more functinality. Press Button 1 to access fx, button two to access fx 2 and both buttons to access fx three.
+
+The main six volumes could ne default if no button is pressed and act as futher contrls for the fx too.
+
+
