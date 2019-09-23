@@ -1,0 +1,14 @@
+#N canvas 708 194 855 553 10;
+#X obj 94 81 hsl 128 15 0 127 0 0 empty empty A\ FX\ 1\ Volume -3 -8
+0 10 -262144 -1 -1 0 1;
+#X obj 231 82 hsl 128 15 0 127 0 0 empty empty A\ FX\ 2\ Volume -2
+-8 0 10 -262144 -1 -1 0 1;
+#X obj 376 82 hsl 128 15 0 127 0 0 empty empty A\ FX\ 3\ Volume -2
+-8 0 10 -262144 -1 -1 0 1;
+#X obj 95 121 hsl 128 15 0 127 0 0 empty empty B\ FX\ 1\ Volume -2
+-8 0 10 -262144 -1 -1 0 1;
+#X obj 234 120 hsl 128 15 0 127 0 0 empty empty B\ FX\ 2\ Volume -2
+-8 0 10 -262144 -1 -1 0 1;
+#X obj 379 120 hsl 128 15 0 127 0 0 empty empty B\ FX\ 3\ Volume -2
+-8 0 10 -262144 -1 -1 0 1;
+#X coords 0 -1 1 1 474 188 2 63 62;
