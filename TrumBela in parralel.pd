@@ -1,4 +1,4 @@
-#N canvas 264 50 1159 845 10;
+#N canvas -241 94 1888 857 10;
 #X obj 433 333 GuitarExtended-RingModulator;
 #X obj 59 139 tgl 16 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -6,7 +6,7 @@
 #X obj 237 139 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 198 195 spigot~;
-#X obj 146 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 146 137 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 107 195 spigot~;
 #X obj 522 303 GuitarExtended-Tremolo;
@@ -37,7 +37,14 @@
 #X msg 605 13 440;
 #X obj 249 383 *~;
 #X obj 74 709 Sliders_Horizontal;
-#X obj 739 391 non_mvp;
+#X obj 739 539 non_mvp;
+#X obj 782 2 midi_in;
+#X obj 768 234 unpack f f f f;
+#X floatatom 998 263 3 0 0 0 - - -, f 3;
+#X floatatom 837 271 5 0 0 0 - - -, f 5;
+#X floatatom 799 268 3 0 0 0 - - -, f 3;
+#X floatatom 763 267 3 0 0 0 - - -, f 3;
+#X obj 794 327 controller_Rob;
 #X connect 0 0 16 0;
 #X connect 0 1 17 0;
 #X connect 1 0 2 1;
@@ -77,3 +84,12 @@
 #X connect 27 0 25 0;
 #X connect 28 0 25 0;
 #X connect 29 0 15 0;
+#X connect 32 0 33 0;
+#X connect 33 0 37 0;
+#X connect 33 1 36 0;
+#X connect 33 2 35 0;
+#X connect 33 3 34 0;
+#X connect 37 0 38 0;
+#X connect 38 0 1 0;
+#X connect 38 1 5 0;
+#X connect 38 2 3 0;
