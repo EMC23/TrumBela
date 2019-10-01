@@ -1,0 +1,104 @@
+#N canvas 299 217 729 454 12;
+#X obj 33 126 cnv 15 177 147 empty empty CC\ Map 81 13 0 14 -261748
+-66577 0;
+#X obj 35 296 cnv 15 175 78 empty empty Bela\ Knob\ 1 65 49 0 14 -261556
+-66577 0;
+#X obj 33 11 cnv 15 182 92 empty empty MIDI\ Input 89 10 0 14 -261876
+-66577 0;
+#X obj 519 258 cnv 15 175 166 empty empty Bela\ Knob 83 94 0 14 -261556
+-66577 0;
+#X obj 518 123 cnv 15 178 117 empty empty CC\ Transform 69 11 0 14
+-261748 -66577 0;
+#X obj 516 10 cnv 15 182 92 empty empty MIDI\ Input 89 10 0 14 -261876
+-66577 0;
+#X obj 56 21 ctlin;
+#X floatatom 56 49 5 0 0 0 - - -, f 5;
+#X floatatom 101 49 4 0 0 0 - - -, f 4;
+#X floatatom 140 49 4 0 0 0 - - -, f 4;
+#X obj 52 317 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6600 1;
+#X floatatom 52 337 5 0 0 0 - - -, f 5;
+#X obj 55 208 spigot, f 7;
+#X floatatom 55 238 5 0 0 0 - - -, f 5;
+#X obj 140 158 == 1;
+#X obj 101 183 &&, f 6;
+#X obj 101 158 == 2;
+#X text 62 69 value;
+#X text 106 68 cc;
+#X text 145 68 channel;
+#X obj 538 21 ctlin;
+#X floatatom 538 49 5 0 0 0 - - -, f 5;
+#X floatatom 583 49 4 0 0 0 - - -, f 4;
+#X floatatom 622 49 4 0 0 0 - - -, f 4;
+#X obj 537 371 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 537 391 5 0 0 0 - - -, f 5;
+#X obj 537 323 spigot, f 7;
+#X floatatom 537 348 5 0 0 0 - - -, f 5;
+#X obj 622 273 == 1;
+#X obj 583 298 &&, f 6;
+#X obj 583 273 == 2;
+#X text 544 69 value;
+#X text 588 68 cc;
+#X text 627 68 channel;
+#X obj 583 178 &&, f 6;
+#X obj 583 153 == 7;
+#X obj 622 153 == 2;
+#X msg 582 207 2;
+#X msg 623 207 1;
+#X obj 529 208 spigot;
+#X obj 234 127 cnv 15 177 147 empty empty CC\ Map 81 13 0 14 -261748
+-66577 0;
+#X obj 236 297 cnv 15 175 78 empty empty Bela\ Knob\ 2 65 49 0 14 -261556
+-66577 0;
+#X obj 253 318 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6800 1;
+#X floatatom 253 338 5 0 0 0 - - -, f 5;
+#X obj 256 209 spigot, f 7;
+#X floatatom 256 239 5 0 0 0 - - -, f 5;
+#X obj 341 159 == 1;
+#X obj 302 184 &&, f 6;
+#X obj 302 159 == 3;
+#X text 114 211 Controller 2 Channel 1, f 14;
+#X text 315 212 Controller 3 Channel 1, f 14;
+#X connect 6 0 7 0;
+#X connect 6 1 8 0;
+#X connect 6 2 9 0;
+#X connect 7 0 12 0;
+#X connect 7 0 44 0;
+#X connect 8 0 16 0;
+#X connect 8 0 48 0;
+#X connect 9 0 14 0;
+#X connect 9 0 46 0;
+#X connect 10 0 11 0;
+#X connect 12 0 13 0;
+#X connect 13 0 10 0;
+#X connect 14 0 15 1;
+#X connect 15 0 12 1;
+#X connect 16 0 15 0;
+#X connect 20 0 21 0;
+#X connect 20 1 22 0;
+#X connect 20 2 23 0;
+#X connect 21 0 39 0;
+#X connect 22 0 35 0;
+#X connect 23 0 36 0;
+#X connect 24 0 25 0;
+#X connect 26 0 27 0;
+#X connect 27 0 24 0;
+#X connect 28 0 29 1;
+#X connect 29 0 26 1;
+#X connect 30 0 29 0;
+#X connect 34 0 37 0;
+#X connect 34 0 38 0;
+#X connect 34 0 39 1;
+#X connect 35 0 34 0;
+#X connect 36 0 34 1;
+#X connect 37 0 30 0;
+#X connect 38 0 28 0;
+#X connect 39 0 26 0;
+#X connect 42 0 43 0;
+#X connect 44 0 45 0;
+#X connect 45 0 42 0;
+#X connect 46 0 47 1;
+#X connect 47 0 44 1;
+#X connect 48 0 47 0;
