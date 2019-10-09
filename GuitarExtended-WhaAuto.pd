@@ -1,34 +1,39 @@
-#N canvas 167 63 532 500 10;
-#X obj 21 379 vcf~;
-#X floatatom 112 343 5 0 0 0 - - -, f 5;
-#X obj 112 210 vsl 15 128 0 20 0 0 empty empty empty 0 -9 0 10 -262144
+#N canvas 400 146 707 743 10;
+#X obj 79 547 vcf~;
+#X floatatom 170 511 5 0 0 0 - - -, f 5;
+#X obj 170 378 vsl 15 128 0 20 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 3366 1;
-#X obj 87 21 +~ 1;
-#X obj 88 42 *~ 0.5;
-#X obj 87 0 osc~ 2;
-#X obj 189 77 hsl 128 15 700 6000 0 0 empty empty empty -2 -8 0 10
+#X obj 145 189 +~ 1;
+#X obj 146 210 *~ 0.5;
+#X obj 145 168 osc~ 2;
+#X obj 247 245 hsl 128 15 700 6000 0 0 empty empty empty -2 -8 0 10
 -262144 -1 -1 0 1;
-#X obj 143 150 hsl 128 15 0 700 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 201 318 hsl 128 15 0 700 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X floatatom 140 169 6 0 0 0 - - -, f 6;
-#X floatatom 141 111 6 0 0 0 - - -, f 6;
-#X obj 141 92 -;
-#X obj 141 70 bang;
-#X obj 41 176 +~ 200;
-#X obj 40 94 *~ 1500;
-#X text 138 17 <-- LFO (Low-Frequency Oscillator;
-#X text 322 75 <-- Maximum of the freq. range;
-#X text 276 147 <-- Minimum of the freq. range;
-#X text 149 300 <-- "Q";
-#X text 60 380 <-- Voltage-Controlled band-pass filter;
-#X obj 92 -29 hsl 128 15 0.5 4 0 0 empty empty empty -2 -8 0 10 -262144
+#X floatatom 198 337 6 0 0 0 - - -, f 6;
+#X floatatom 218 294 6 0 0 0 - - -, f 6;
+#X obj 218 275 -;
+#X obj 199 238 bang;
+#X obj 99 344 +~ 200;
+#X obj 98 262 *~ 1500;
+#X text 196 185 <-- LFO (Low-Frequency Oscillator;
+#X text 380 243 <-- Maximum of the freq. range;
+#X text 334 315 <-- Minimum of the freq. range;
+#X text 207 468 <-- "Q";
+#X text 118 548 <-- Voltage-Controlled band-pass filter;
+#X obj 150 139 hsl 128 15 0.5 4 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X text 273 427 Pierre Massat \, GuitarExtended \, 2012.s;
-#X obj 184 201 loadbang;
-#X msg 182 226 5.3;
-#X obj 20 -18 inlet~;
-#X obj 15 414 outlet~;
-#X obj 75 414 outlet~;
+#X text 331 595 Pierre Massat \, GuitarExtended \, 2012.s;
+#X obj 242 369 loadbang;
+#X msg 240 394 5.3;
+#X obj 82 61 inlet~;
+#X obj 73 597 outlet~;
+#X obj 133 597 outlet~;
+#X obj 150 113 + 0.5;
+#X obj 150 88 * 3.5;
+#X obj 150 60 inlet;
+#X obj 212 59 inlet;
+#X obj 212 87 * 20;
 #X connect 0 0 24 0;
 #X connect 0 0 25 0;
 #X connect 2 0 1 0;
@@ -50,3 +55,8 @@
 #X connect 21 0 22 0;
 #X connect 22 0 2 0;
 #X connect 23 0 0 0;
+#X connect 26 0 19 0;
+#X connect 27 0 26 0;
+#X connect 28 0 27 0;
+#X connect 29 0 30 0;
+#X connect 30 0 2 0;
