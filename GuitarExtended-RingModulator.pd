@@ -1,4 +1,4 @@
-#N canvas 754 321 1024 692 10;
+#N canvas 612 258 1024 715 10;
 #X obj 58 561 *~;
 #X obj 97 391 osc~;
 #X obj 230 477 line~;
@@ -50,7 +50,7 @@
 -8 0 10 -262144 -1 -1 1693 1;
 #X msg 350 177 set waveform_square;
 #X msg 350 197 set waveform_sine;
-#N canvas 0 0 450 300 random_manual 0;
+#N canvas 0 22 450 300 random_manual 0;
 #X obj 163 115 random 120;
 #X obj 164 143 + 10;
 #X obj 162 236 s manual_freq;
@@ -74,7 +74,7 @@
 #X connect 9 0 7 0;
 #X connect 10 0 8 0;
 #X restore 547 450 pd random_manual;
-#N canvas 0 0 607 397 random_LFO 0;
+#N canvas 0 22 607 397 random_LFO 0;
 #X obj 61 140 + 10;
 #X obj 59 194 line;
 #X obj 75 168 pack 0 0;
@@ -155,7 +155,7 @@
 -1 0 1;
 #X obj 547 396 tgl 40 0 empty empty Random_Manual 0 -5 0 10 -4160 -1
 -1 0 1;
-#N canvas 0 0 612 483 equal_power_crossfade 0;
+#N canvas 0 22 612 483 equal_power_crossfade 0;
 #X obj 33 48 inlet~;
 #X obj 244 58 inlet;
 #X obj 33 332 outlet~;
@@ -164,7 +164,7 @@
 #X obj 49 194 expr cos($f1 * 3.14159 / 2);
 #X obj 244 194 expr sin($f1 * 3.14159 / 2);
 #X obj 244 134 clip 0 1;
-#N canvas 0 0 450 300 pan_core 0;
+#N canvas 0 22 450 300 pan_core 0;
 #X obj 21 106 inlet~;
 #X obj 226 126 inlet;
 #X obj 80 453 *~;
@@ -224,6 +224,9 @@ wet.;
 #X obj 31 27 inlet~;
 #X obj 12 654 outlet~;
 #X obj 66 653 outlet~;
+#X obj 92 23 inlet;
+#X obj 157 24 inlet;
+#X obj 159 49 * 127;
 #X connect 0 0 47 1;
 #X connect 1 0 12 0;
 #X connect 2 0 13 1;
@@ -276,3 +279,6 @@ wet.;
 #X connect 51 0 7 0;
 #X connect 58 0 0 0;
 #X connect 58 0 47 0;
+#X connect 61 0 48 0;
+#X connect 62 0 63 0;
+#X connect 63 0 23 0;

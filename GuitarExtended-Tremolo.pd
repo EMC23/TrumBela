@@ -1,38 +1,43 @@
-#N canvas 957 460 618 414 10;
-#X obj 241 80 osc~;
-#X obj 242 146 *~;
-#X obj 242 197 clip~ -1 1;
-#X obj 134 306 *~;
-#X obj 299 122 hsl 128 15 1 20 1 0 empty empty empty -2 -8 0 10 -262144
--1 -1 7400 1;
-#X obj 244 52 hsl 128 15 0.5 25 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 7500 1;
-#X text 292 81 <-- Sine wave (between -1 and 1);
-#X text 281 146 <-- Multipled by a positive number X;
-#X text 303 160 (between -X and X);
-#X text 313 197 <-- Trim at -1 and 1;
-#X text 336 225 a square wave as X increases);
-#X text 336 211 (the sine wave tends to become;
-#X text 382 296 <-- Normalize between 0 and 1;
-#X text 240 37 Frequency of the oscillator;
-#X text 294 107 Number X (between 1 and 20 \, log);
-#X text 276 378 Patch by Pierre Massat \, GuitarExtended \, 2012;
-#X text 273 392 (based on a suggestion by "mod" \, Pure Data forum
+#N canvas 544 375 723 578 10;
+#X obj 166 175 osc~;
+#X obj 167 241 *~;
+#X obj 167 292 clip~ -1 1;
+#X obj 59 401 *~;
+#X obj 224 217 hsl 128 15 1 20 1 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 169 147 hsl 128 15 0.5 25 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X text 217 176 <-- Sine wave (between -1 and 1);
+#X text 206 241 <-- Multipled by a positive number X;
+#X text 228 255 (between -X and X);
+#X text 238 292 <-- Trim at -1 and 1;
+#X text 261 320 a square wave as X increases);
+#X text 261 306 (the sine wave tends to become;
+#X text 307 391 <-- Normalize between 0 and 1;
+#X text 165 132 Frequency of the oscillator;
+#X text 219 202 Number X (between 1 and 20 \, log);
+#X text 201 473 Patch by Pierre Massat \, GuitarExtended \, 2012;
+#X text 198 487 (based on a suggestion by "mod" \, Pure Data forum
 \, 2011);
-#X obj 242 280 *~;
-#X obj 242 309 +~;
-#X obj 322 263 hsl 128 15 0 0.5 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6000 1;
-#X floatatom 319 282 5 0 0 0 - - -, f 5;
-#X obj 305 309 expr 1-$f1;
-#X floatatom 305 331 5 0 0 0 - - -, f 5;
-#X text 405 308 and adjust depth;
-#X text 408 37 ("Rate");
-#X text 493 107 ("Shape");
-#X text 316 246 "Depth";
-#X obj 131 53 inlet~;
-#X obj 126 348 outlet~;
-#X obj 178 348 outlet~;
+#X obj 167 375 *~;
+#X obj 167 404 +~;
+#X obj 247 358 hsl 128 15 0 0.5 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 244 377 5 0 0 0 - - -, f 5;
+#X obj 230 404 expr 1-$f1;
+#X floatatom 230 426 5 0 0 0 - - -, f 5;
+#X text 330 403 and adjust depth;
+#X text 333 132 ("Rate");
+#X text 418 202 ("Shape");
+#X text 241 341 "Depth";
+#X obj 56 35 inlet~;
+#X obj 51 443 outlet~;
+#X obj 103 443 outlet~;
+#X obj 116 35 inlet;
+#X obj 116 60 * 0.5;
+#X obj 169 33 inlet;
+#X obj 169 58 * 24.5;
+#X obj 169 83 + 0.5;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 17 0;
@@ -48,3 +53,8 @@
 #X connect 21 0 18 1;
 #X connect 21 0 22 0;
 #X connect 27 0 3 0;
+#X connect 30 0 31 0;
+#X connect 31 0 19 0;
+#X connect 32 0 33 0;
+#X connect 33 0 34 0;
+#X connect 34 0 5 0;
