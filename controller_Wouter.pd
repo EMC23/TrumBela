@@ -1,4 +1,4 @@
-#N canvas 307 239 585 702 10;
+#N canvas 131 250 585 725 10;
 #X obj 27 605 cnv 15 529 80 empty empty Slider\ Outlets 16 60 0 14
 -212671 -66577 0;
 #X obj 26 12 cnv 15 176 109 empty empty MIDI\ Input 17 16 0 14 -261876

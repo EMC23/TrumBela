@@ -1,4 +1,4 @@
-#N canvas 400 146 707 743 10;
+#N canvas 93 182 707 766 10;
 #X obj 79 547 vcf~;
 #X floatatom 157 517 5 0 0 0 - - -, f 5;
 #X obj 157 384 vsl 15 128 0 20 0 0 empty empty empty 0 -9 0 10 -262144
@@ -7,9 +7,9 @@
 #X obj 146 210 *~ 0.5;
 #X obj 145 168 osc~ 2;
 #X obj 246 243 hsl 128 15 700 6000 0 0 empty empty empty -2 -8 0 10
--262144 -1 -1 6400 1;
+-262144 -1 -1 10304 1;
 #X obj 247 308 hsl 128 15 0 700 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 7100 1;
+-1 -1 181 1;
 #X floatatom 178 350 6 0 0 0 - - -, f 6;
 #X floatatom 185 283 6 0 0 0 - - -, f 6;
 #X obj 183 248 -;
@@ -22,7 +22,7 @@
 #X text 194 474 <-- "Q";
 #X text 118 548 <-- Voltage-Controlled band-pass filter;
 #X obj 150 139 hsl 128 15 0.5 4 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6800 1;
+-1 -1 0 1;
 #X text 331 595 Pierre Massat \, GuitarExtended \, 2012.s;
 #X obj 351 115 loadbang;
 #X msg 205 391 5.3;
