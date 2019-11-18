@@ -1,4 +1,4 @@
-#N canvas 334 144 1075 708 10;
+#N canvas 334 144 1045 708 10;
 #X obj 205 204 cnv 15 202 78 empty empty MIDI\ FX\ Select 29 21 0 18
 -253292 -66577 0;
 #X obj 394 27 cnv 15 167 164 empty empty FX\ Controls 18 19 0 18 -253738
@@ -107,10 +107,10 @@
 #X obj 448 213 adc~ 1 2, f 10;
 #X obj 231 386 adc~ 3 4 5 6 7 8, f 101;
 #X obj 231 604 snapshot~;
-#X obj 927 453 loadbang;
+#X obj 968 439 loadbang;
 #X obj 311 625 > 0;
 #X obj 311 602 snapshot~;
-#X obj 927 477 metro 50;
+#X obj 883 486 metro 50;
 #X obj 392 625 > 0;
 #X obj 392 602 snapshot~;
 #X obj 602 620 > 0;
@@ -119,6 +119,11 @@
 #X obj 682 595 snapshot~;
 #X obj 763 618 > 0;
 #X obj 763 595 snapshot~;
+#X obj 883 615 s bela_setDigital;
+#X text 883 638 initialise digital pins;
+#X msg 882 564 out 11 \, out 12 \, out 13 \, out 14 \, out 15 \, out
+16, f 23;
+#X text 895 533 pins 0 to 5 are signal rate outputs, f 21;
 #X connect 17 0 64 0;
 #X connect 18 0 65 0;
 #X connect 20 0 41 0;
@@ -155,7 +160,9 @@
 #X connect 39 0 36 1;
 #X connect 40 0 36 2;
 #X connect 41 0 66 0;
+#X connect 41 0 17 1;
 #X connect 42 0 81 0;
+#X connect 42 0 26 1;
 #X connect 43 0 28 1;
 #X connect 43 0 84 0;
 #X connect 44 0 18 1;
@@ -236,6 +243,7 @@
 #X connect 78 5 91 0;
 #X connect 79 0 66 0;
 #X connect 80 0 83 0;
+#X connect 80 0 94 0;
 #X connect 81 0 13 0;
 #X connect 82 0 81 0;
 #X connect 83 0 79 0;
@@ -252,3 +260,4 @@
 #X connect 89 0 88 0;
 #X connect 90 0 15 0;
 #X connect 91 0 90 0;
+#X connect 94 0 92 0;
