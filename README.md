@@ -57,4 +57,7 @@ A PureData prototype to test the TrumBela setup with a regular MIDI controller:
 
 ![TrumBela PureData prototype](images/trumbela-prototype-2.gif)
 
+![TrumBela hardware prototype](images/trumbela.png)
+
+
 
