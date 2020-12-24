@@ -2,8 +2,6 @@
 
 TrumBela is an effects pedal for the [Bela](https://bela.io/) embedded audio computing platform.
 
-http://wiki.emc23.com/index.php/Tr-umBela
-
 The TrumBela is our first hardware/software project using the Bela and Pure Data. It is a single use device with no display other than 8 LEDs.
 
 The FX box will have two mono inputs that each can be routed to any of the three effects. The outputs of the three effects are mixed to the single stereo output of the box.
